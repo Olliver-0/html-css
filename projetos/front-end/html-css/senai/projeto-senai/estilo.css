@@ -1,0 +1,130 @@
+* {
+    margin: 0px;
+    padding: 0px;   
+    border: 0px;
+    font-size: 100%;
+    font-family: “Source Sans Pro”, sans-serif;
+    font-weight: 300;
+    vertical-align: baseline;
+    text-decoration: none;
+    list-style: none;
+    background-color: rgb(216, 228, 236);
+  }
+
+  /* Desenvolvido por: Natã Gabriel de Oliveira
+    27/08/2023
+    Exercício - UC: Desenvolvimento de Software - SESI-SENAi
+    Cerca de 6 horas de trabalho */
+
+hr {
+    border: 1px solid #f03232;
+    background-color: transparent;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding: 20px;
+    color: rgb(62, 127, 226);
+}
+
+h1::first-letter {
+    font-size: 150%;
+    font-weight: 700;
+    color: #f03232;
+}
+
+h2 {
+    text-align: center ;
+    font-size: 155%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: rgb(80, 146, 247);
+}
+
+.numero-indicador {
+    font-weight: 600;
+    color: #f04d4d;
+}
+
+
+p {
+    text-align: center; 
+    font-size: 105%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(59, 83, 143);
+}
+
+p::selection {
+    background-color: #f04d4d;
+    color: white;
+}
+
+.quebra-de-linha-comum::selection {
+    background-color: #f04d4d;
+    color: white;
+}
+
+strong {
+    font-weight: 600;
+}
+
+strong::selection {
+    background-color: #f04d4d;
+    color: white;
+}
+
+em::selection {
+    background-color: #f04d4d;
+    color: white;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.underline::selection {
+    background-color: #f04d4d;
+    color: white;
+}
+
+a,
+a:visited
+a:active {
+    color: #f04d4d;
+    text-decoration: underline;
+}
+
+a:focus,
+a:hover {
+    color: rgb(255, 38, 38);
+    font-weight: 600;
+    font-size: 110%;
+}
+
+a::selection {
+    background-color: #f04d4d;
+    color: white;
+}
+
+nav {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 105%;
+}
+
+img {
+    width: 25%;
+    height: 25%;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    border-radius: 30px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+}

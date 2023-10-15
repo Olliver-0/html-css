@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Site</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <header> 
+        <section>
+           <image src="./Imagens/Your Company.png" alt="Logo da Empresa" width="200px" />
+       
+           <!-- Início do menu do site -->
+           <nav>
+           <ul>
+               <li>
+                   <a href="inicio.html">
+                       Início
+                   </a>
+                   </li>
+                   <li>
+                      <a href="contato.html">
+                       Contato
+                   </a>
+                   </li>
+           </ul>
+       </nav>
+        </section>
+       
+       </header>
+       <!-- Início do Main-->
+    <main>
+        <!-- Início da section do conteúdo do site-->
+        <section>
+<!-- Conteúdo de texto sobre o site-->
+<article>
+    <h1>Formulário de Contato</h1>
+    <p>Preencha os dados abaixo e envie sua mensagem de contato.</p>
+
+    <fieldset>
+        <legend>
+            <h5><strong>Dados de Contato</strong></h5>
+        </legend>
+        <form id="frmInscrição" action="contato.php" method="post">
+
+            <label for="txtNome"><strong>Nome:</strong></label><br>
+            <input type="text" id="txtNome" required="required" placeholder="Digite seu Nome" maxlength="100" size="50"><br><br>
+
+            <label for="dtDatadeNascimento"><strong>Data de Nascimento:</strong></label><br>
+            <input type="date" id="dtDatadeNascimento" required="required"><br><br>
+
+            <label><strong>Sexo:</strong></label><br>
+            <label for="txtMasculino">Masculino</label>
+            <input type="radio" name="rdoSexo" id="txtMasculino" value="M" required="required">
+            
+            <label for="txtFeminino">Feminino</label>
+            <input type="radio" name="rdoSexo" id="txtFeminino" value="F" required="required"><br><br>
+            
+            <label for="txtEndereço"><strong>Endereço:</strong></label><br>
+            <input type="text" id="txtEndereço" required="required" placeholder="Digite seu Endereço" maxlength="100" size="50"><br><br>
+
+            <label for="slctEstado"><strong>Estado:</strong></label><br>
+            <select id="slctEstado" required="required">
+                <option value="">-Selecione-</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="MG">Minas Gerais</option>
+            </select><br><br>
+
+            <label for="slctCidade"><strong>Cidade:</strong></label><br>
+            <select id="slctCidade" required="required">
+                <option value="">-Selecione-</option>
+                <option value="jnvll">Joinville</option>
+                <option value="BH">Belo Horizonte</option>
+            </select><br><br>
+
+            <label for="tlCelular"><strong>Celular:</strong></label><br>
+            <input type="tel" id="tlCelular" required="required" placeholder="Digite seu Número"><br><br>
+
+            <label for="emlEmail"><strong>Email:</strong></label><br>
+            <input type="email" id="emlEmail" required="required" placeholder="Digite seu Email" size="50"><br><br>
+
+            <label><strong>Áreas de Interesse:</strong></label><br>
+            
+            <input type="checkbox" id="chckJavaScript" value="JavaScript" name="chckAreasdeInteresse" required="required">
+            <label for="chckJavaScript">JavaScript</label>
+            <input type="checkbox" id="chckCSS" value="CSS" name="chckAreasdeInteresse" required="required">
+            <label for="chckCSS">CSS</label>
+            <input type="checkbox" id="chckHTML5" value="HTML5" name="chckAreasdeInteresse" required="required">
+            <label for="chckHTML5">HTML</label><br><br>
+
+            <label for="txtareaMensagem"><strong>Mensagem</strong></label><br>
+            <textarea id="txtareaMensagem" cols="20" rows="10" required="required" placeholder="Digite sua Mensagem"></textarea><br><br>
+
+            <input type="submit" value="Enviar" required="required">
+
+                </form>   
+    </fieldset>
+
+</article>
+<!-- Fim do conteúdo sobre o site-->
+
+        </section>
+        <!-- Fim da section do conteúdo do site-->
+    </main>
+    <!-- Fim do main-->
+
+    <footer>
+        <!-- Início das redes sociais-->
+        <ul>
+            <li>
+                <a hreaf="#">
+                    <img src="./Imagens/Logo Insta.png" alt="Instagram" width="64px" />
+                </a>
+            </li>
+            <li>
+                <a href="$">
+                    <img src="./Imagens/Logo Face.png" alt="Facebook" width="64px" />
+                </a>
+            </li>
+            <li>
+                <a href="%">
+                    <img src="./Imagens/Logo Twitter.png" alt="Twitter" width="64px" />
+                </a>
+            </li>
+        </ul>
+        <!-- Fim das redes sociais-->
+        </footer>
+        <!-- Fim do footer-->
+</body>
+
+</html>

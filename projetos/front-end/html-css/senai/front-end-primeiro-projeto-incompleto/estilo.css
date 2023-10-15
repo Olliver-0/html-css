@@ -1,0 +1,193 @@
+/* Usado para importar regras de estilo de outras folhas de estilo. */
+@import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap";
+* {
+  /* Este seletor escolhe todos os elementos do documento e redefine
+todas as configurações do navegador. */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: “Source Sans Pro”, sans-serif;
+  font-weight: 300;
+  vertical-align: baseline;
+  text-decoration: none;
+  list-style: none;
+}
+.conteudo {
+  width: 1024px;
+  margin: 30px auto;
+
+  display: flex;
+  flex-direction: column;
+}
+.linha {
+  display: flex;
+  flex-direction: row;
+}
+header section {
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header nav ul li a {
+  margin: 0px 15px;
+  color: #39c;
+}
+
+.botao {
+  padding: 5px 30px;
+  border-radius: 10px;
+}
+.botao.botao-destaque {
+  background: #30c5cc;
+  color: #fff;
+}
+.sobre {
+  justify-content: space-between;
+  align-items: center;
+}
+.sobre article {
+  width: 350px;
+}
+.sobre article h1 {
+  font-size: 70px;
+  line-height: 90%;
+  font-weight: 400;
+  color: #336;
+}
+
+.sobre article h2,
+.sobre article p {
+  color: #39c;
+}
+.sobre article h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 200%;
+}
+.sobre article p {
+  margin: 10px 0 40px;
+}
+.sobre article figcaption img {
+  width: 700px;
+}
+footer ul li {
+  margin: 0 30px 0 0;
+}
+footer ul li a img {
+  width: 30px;
+}
+
+/* Define o tamanho dos elementos em telas de 1150px. */
+@media (max-width: 1150px) {
+  .conteudo {
+    width: 950px;
+  }
+}
+/* Define o tamanho dos elementos em telas de 1024px. */
+@media (max-width: 1024px) {
+  .conteudo {
+    width: 850px;
+  }
+  .sobre figcaption img {
+    width: 600px;
+  }
+}
+/* Define o tamanho dos elementos em telas de 915px. */
+@media (max-width: 915px) {
+  .conteudo {
+    width: 600px;
+  }
+  .linha {
+    flex-direction: column;
+  }
+
+  header nav {
+    margin: 30px 0;
+  }
+  .sobre article {
+    width: 100%;
+  }
+  .sobre figcaption img {
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+  footer .linha {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+/* Define o tamanho dos elementos em telas de 665px. */
+@media (max-width: 665px) {
+  .conteudo {
+    width: 400px;
+  }
+}
+/* Define o tamanho dos elementos em telas de 450px. */
+@media (max-width: 450px) {
+  .conteudo {
+    width: 290px;
+  }
+  header nav {
+    width: 100%;
+    padding: 10px 0 20px;
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+  header nav ul li {
+    margin: 10px 0;
+  }
+  * {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+  }
+}
+/* Itens do formulário */
+fieldset {
+  width: 60%;
+  padding: 10px 0 20px;
+  margin-left: 10px;
+  border: 2px solid lightblue;
+  border-radius: 10px;
+  padding: 20px;
+}
+.agrupamento {
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+}
+
+.agrupamento-botao {
+  padding-top: 10px;
+}
+.entrada {
+  font-family: inherit;
+  line-height: 1.15;
+  border: 2px solid lightblue;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+}
+.entrada:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgb(173, 216, 230, 0.5);
+}
+.entrada.mensagem {
+  resize: none;
+}
+
+.rotulo {
+  padding-bottom: 2.5px;
+  padding-top: 20px;
+  font-weight: 600;
+}

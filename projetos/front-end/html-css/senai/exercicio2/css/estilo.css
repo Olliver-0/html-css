@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/*Configurações gerais/página principal*/
+* {
+    font: normal 500 1em Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    vertical-align: baseline;
+}
+
+body {
+    padding: 5px;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, chocolate, rgb(209, 122, 60));
+}
+
+.header-index-cafe {
+    margin: 20px auto;
+    padding: 4px;
+    width: fit-content;
+    height: fit-content; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    border: 4px solid white;
+    border-radius: 25px;
+    background-color: rgb(255, 218, 170);
+}
+
+.h1-index-cafes {
+    font: normal 600 1.8em oswald, serif;
+    color: rgb(133, 40, 7);
+    margin-bottom: 4px;
+    padding: 4px;
+}
+
+.h2-index {
+    font: normal 500 1.1em oswald, serif;
+    color: rgb(235, 89, 37);
+    padding: 4px;
+    width: fit-content;
+}
+
+.main-index {
+    display: flex;
+    justify-content: space-around;
+    background-color: coral;
+    margin: 75px 8px 8px 8px;
+    padding: 18px;
+    border: 5px solid white;
+    border-radius: 60px;
+}
+
+.section-index {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 320px;
+    text-align: center;
+    font: italic 500 1em Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    opacity: 0.9;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    margin-bottom: 8px;
+    border: 3px solid rgb(87, 30, 8);
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+img:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.2);
+}
+
+.nav-index {
+    margin-top: 23px;
+}
+
+.nav-index a {
+    font: italic 500 1em ARIAL, Helvetica, sans-serif;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/*Outras páginas*/
+
+.main-cafes {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 225px;
+    height: 450px;
+    overflow: hidden;
+    background-color: coral;
+    margin: auto;
+    padding: 18px;
+    border: 5px solid white;
+    border-radius: 60px; 
+}
+
+.article-cafes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h2-cafes {
+    font: italic 600 1.2em oswald, serif;
+    color: rgb(58, 17, 2);
+    margin: 16px 10px 15px 10px;
+}
+
+.lista-cafes {
+    margin-bottom: 16px;
+}
+
+.item-de-lista-cafes {
+    font: normal 500 1.1em 'young-serif', serif;
+    color: rgb(68, 21, 3);
+}
+
+.aside-cafes {
+    padding: 6px;
+    background-color: rgb(255, 148, 109);
+    border-radius: 15px;
+}
+
+#custo {
+    font: normal 500 1.11em 'young serif', serif;
+    color: rgb(58, 17, 2);
+}
+
+strong {
+    font-weight: 600;
+}
+
+.nav-cafes {
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+}
+
+.nav-cafes a {
+    font: italic 500 1em Arial, Helvetica, sans-serif;
+    color: white;
+}

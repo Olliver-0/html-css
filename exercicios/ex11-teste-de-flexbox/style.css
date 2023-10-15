@@ -1,0 +1,42 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+    background-color:aqua;
+    flex-wrap: wrap;
+    margin: 16px;
+    padding: 10px;
+}
+
+.bloco-1 {
+    background-color: blueviolet;
+    height: 200px;
+    width: 200px;
+    margin: 8px;
+    padding: 5px;
+    flex: 1;
+}
+
+.bloco-2 {
+    background-color: chartreuse;
+    height: 200px;
+    width: 200px;
+    margin: 8px;
+    padding: 5px;
+}
+
+.bloco-3 {
+    background-color: brown;
+    height: 200px;
+    width: 200px;
+    margin: 8px;
+    padding: 5px;
+}

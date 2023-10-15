@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Aprendendo imagens dinâmicas</h1>
+    <p>Abra o site em diferentes dispositivos ou aumente e diminua o navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/paisagem-300.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="img/paisagem-700.jpg" type="image/jpg">
+        <img src="img/paisagem-1000.jpg" alt="imagem 1000px">
+    </picture>
+</body>
+</html>

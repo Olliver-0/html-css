@@ -1,0 +1,181 @@
+<!DOCTYPE html> <!--07/09/2023 - 08:00 - 11:35-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icone-lista.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <header>
+        <h1>Preencha os Campos</h1>
+    </header>
+    <form action="#" method="post">
+        <main>
+                <fieldset>
+                    <legend>Formulário de Cadastro</legend>
+                        <fieldset>
+                            <legend>Dados Pessoais</legend>
+                            <section>
+                                <label for="nome">Nome:</label>
+                                <input type="text" name="nome" id="nome" placeholder="Ex: Mirian Cardoso dos Santos" autocomplete="name" required>
+                            </section>
+                            <section>
+                                <label for="data">Data de Nascimento:</label>
+                                <input type="date" name="data" id="data" autocomplete="bday" required>
+                            </section>
+                            <section>
+                                <label for="sexo">Sexo:</label>
+                                <input type="radio" id="masculino" name="sexo" value="masculino" checked>
+                                <label for="masculino">Masculino</label>
+                                <input type="radio" id="feminino" name="sexo" value="feminino">
+                                <label for="feminino">Feminino</label>
+                            </section>
+                            <section>
+                                <label for="telefone">Telefone:</label>
+                                <input type="tel" name="telefone" id="telefone" autocomplete="tel" placeholder="Ex: (99) 9 9999-9999" maxlength="20" required>
+                            </section>
+                            <section>
+                                <label for="email">Email:</label>
+                                <input type="email" name="email" id="email" autocomplete="email" placeholder="Ex: exemplo@gmail.com" required>
+                            </section>
+                            <section>
+                                <label for="senha">Senha:</label>
+                                <input type="password" name="senha" id="senha" autocomplete="new-password" placeholder="Ex: SenhaF0rte#" required>
+                            </section>
+                            <section>
+                                <label for="foto">Foto de Perfil:</label>
+                                <input type="file" name="foto" id="foto" autocomplete="photo">
+                            </section>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Endereço</legend>
+                            <section>
+                                <label for="estado">Estado:</label>
+                                <input type="text" name="estado" id="estado" placeholder="Ex: Minas Gerais" autocomplete="address-level3" required>
+                            </section>
+                            <section>
+                                <label for="cidade">Cidade:</label>
+                                <input type="text" name="cidade" id="cidade" placeholder="Ex: Belo Horizonte" autocomplete="address-level4" required>
+                            </section>
+                            <section>
+                                <label for="bairro">Bairro:</label>
+                                <input type="text" name="bairro" id="bairro" placeholder="Ex: Pampulha" autocomplete="address-line3" required>
+                            </section>
+                            <section>
+                                <label for="rua">Rua:</label>
+                                <input type="text" name="rua" id="rua" placeholder="Ex: Josué Sotte" autocomplete="address-line1" required>
+                            </section>
+                            <section>
+                                <label for="numero">Número:</label>
+                                <input type="number" name="numero" id="numero" placeholder="Ex: 99999" min="2" max="10000" autocomplete="address-line1" required>
+                            </section>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Dados dos Responsável</legend>
+                            <section>
+                                <label for="nome2">Nome:</label>
+                                <input type="text" name="nome2" id="nome2" placeholder="Ex: Beto Ferreira" autocomplete="name" required>
+                            </section>
+                            <section>
+                                <label for="data2">Data de Nascimento:</label>
+                                <input type="date" name="data2" id="data2" autocomplete="bday" required>
+                            </section>
+                            <section>
+                                <label for="sexo2">Sexo:</label>
+                                <input type="radio" id="masculino2" name="sexo2" value="masculino" checked>
+                                <label for="masculino2">Masculino</label>
+                                <input type="radio" id="feminino2" name="sexo2" value="feminino">
+                                <label for="feminino2">Feminino</label>
+                            </section>
+                            <section>
+                                <label for="telefone2">Telefone:</label>
+                                <input type="tel" name="telefone2" id="telefone2" autocomplete="tel" placeholder="Ex: (99) 9 9999-9999" maxlength="20" required>
+                            </section>
+                            <section>
+                                <label for="email2">Email:</label>
+                                <input type="email" name="email2" id="email2" autocomplete="email" placeholder="Ex: exemplo@gmail.com" required>
+                            </section>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Dados de Lazer</legend>
+                            <section>
+                                <label for="viagem">Gosta de viajar?</label>
+                                <input type="radio" id="sim" name="viagem" value="sim">
+                                <label for="sim">Sim</label>
+                                <input type="radio" id="nao" name="viagem" value="Não">
+                                <label for="nao">Não</label>
+                            </section>
+                            <section>
+                                <label for="cidade2">Qual cidade você gostaria de conhecer?</label>
+                                <input type="text" name="cidade2" id="cidade2" placeholder="Ex: Goiânia">
+                            </section>
+                            <section>
+                                <label for="estudo">Estuda atualmente?</label>
+                                <input type="radio" id="sim2" name="estudo" value="sim2">
+                                <label for="sim2">Sim</label>
+                                <input type="radio" id="nao2" name="estudo" value="Não2">
+                                <label for="nao2">Não</label>
+                            </section>
+                            <section>
+                                <label for="jogos">Joga video game?</label>
+                                <input type="radio" id="sim3" name="jogos" value="sim3">
+                                <label for="sim3">Sim</label>
+                                <input type="radio" id="nao3" name="jogos" value="Não3">
+                                <label for="nao3">Não</label>
+                            </section>
+                            <section>
+                                <label for="jogo-favorito">Qual seu jogo favorito?</label>
+                                <input type="text" name="jogo-favorito" id="jogo-favorito" placeholder="Ex: God of War">
+                            </section>
+                            <section>
+                                <label for="opcoes">Quais são seus tipos de músicas favoritos?</label><br>
+                                <input type="checkbox" id="opcao1" name="opcoes" value="valor1">
+                                <label for="opcao1">Rock</label>
+                                <input type="checkbox" id="opcao2" name="opcoes" value="valor2">
+                                <label for="opcao2">Pop</label><br>
+                                <input type="checkbox" id="opcao3" name="opcoes" value="valor3">
+                                <label for="opcao3">Eletrônica</label>
+                                <input type="checkbox" id="opcao4" name="opcoes" value="valor4">
+                                <label for="opcao4">Funk</label><br>
+                                <input type="checkbox" id="opcao5" name="opcoes" value="valor5">
+                                <label for="opcao5">Gospel</label>
+                                <input type="checkbox" id="opcao6" name="opcoes" value="valor6">
+                                <label for="opcao6">Phonk</label><br>
+                                <input type="checkbox" id="opcao7" name="opcoes" value="valor7">
+                                <label for="opcao7">Clássica</label>
+                                <input type="checkbox" id="opcao8" name="opcoes" value="valor8">
+                                <label for="opcao8">Outras</label><br>
+                            </section>
+                            <section>
+                                <label for="hobbie">O que gosta de fazer?</label><br>
+                                <textarea name="hobbie" id="hobbie" cols="30" rows="10" placeholder="Coisas que você faz no seu tempo livre"></textarea>
+                            </section>
+                        </fieldset>
+                </fieldset>
+            </main>
+                <input type="submit" value="Finalizar cadastro">
+        </form> 
+</body>
+</html>
+
+<!--1 - Fazer um formulário com alguns dados pessoais como: Nome, endereço, telefone, email, etc. 
+Colocar campos para dados dos pais: Nome, endereço, data de nascimento, profissão
+
+Dados de lazer como: 
+Gosta de viajar ? Sim Não
+Qual cidade que você gostaria de conhecer ? Colocar um campo
+
+Estuda atualmente ? Sim Não
+Colocar um campo informando qual escola
+Joga vídeo game  ? Sim não
+Colocar um campo  para o usuário informar qual o jogo preferido
+
+Colocar tipos de músicas preferidas (Colocar checkbox)
+Colocar outras informações - Sua criatividade
+
+Dica: Olhar no exemplo do formulário do professor
+
+Salvar o arquivo como: Formulario_Seu nome.html
+Ao término do exercício colocar no classroom.-->
