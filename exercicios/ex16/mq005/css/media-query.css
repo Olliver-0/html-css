@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* Telas maiores */
+
 @media screen and (min-width: 768px) {
     .material-icons {
         display: none !important;
