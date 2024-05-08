@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex</title>
+    <style>
+        .item {
+            height: 30px;
+            width: calc(33.3333% - 20px); /* esse 20 são os margins e paddings, assim consigo definir apenas 3 itens por linha sem desconsiderar margin e padding */
+            margin: 5px;
+            padding: 5px;
+            background-color: #447;
+            text-align: center;
+            font-size: 1em;
+            color: white;
+        }
+
+        .container {
+            justify-content: center; /* eixo principal */
+            align-items: center; /* eixo secundário */
+            max-width: 600px;
+            height: 400px;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .horizontal {
+            flex-direction: row;
+        }
+        /* flex-direction basicamente define a direção dos elementos */
+        .vertical {
+            flex-direction: column;
+        }
+
+        .quebra {
+            flex-wrap: wrap;
+        }
+
+       body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+       }
+    </style>
+</head>
+<body>
+    <div class="container flex horizontal quebra">
+        <div class="item">CFB Cursos 1</div>
+        <div class="item">CFB Cursos 2</div>
+        <div class="item">CFB Cursos 3</div>
+        <div class="item">CFB Cursos 4</div>
+        <div class="item">CFB Cursos 5</div>
+        <div class="item">CFB Cursos 6</div>
+        <div class="item">CFB Cursos 7</div>
+        <div class="item">CFB Cursos 8</div>
+        <div class="item">CFB Cursos 9</div>
+    </div>
+</body>
+</html>
