@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex</title>
+    <style>
+        .item {
+            
+            margin: 5px;
+            padding: 5px;
+            background-color: #447;
+            text-align: center;
+            font-size: 1em;
+            color: white;
+        }
+
+        .container {
+            /* justify-content: center; Não vai fazer diferença aqui quando se utiliza flex-grow, pois o flex-grow faz os elementos ocuparem toda a linha /* eixo principal */
+             /* align-items: ; /* eixo secundário */
+            align-content: space-between; /* eixo secundário */
+            max-width: 600px;
+            height: 400px;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .horizontal {
+            flex-direction: row;
+        }
+        /* flex-direction basicamente define a direção dos elementos */
+        .vertical {
+            flex-direction: column;
+        }
+
+        .quebra {
+            flex-wrap: wrap;
+        }
+
+        .tam0 {
+            flex-grow: 0;
+        }
+
+        .tam1 {
+            flex-grow: 1;
+        }
+
+        .tam2 {
+            flex-grow: 2;
+        }
+
+        .tam3 {
+            flex-grow: 3;
+        }
+
+        .basea {
+            flex-basis: auto;
+        }
+
+        .base0 {
+            flex-basis: 0;
+        }
+
+        .base1 {
+            flex-basis: 1;
+        }
+
+        .base2 {
+            flex-basis: 2;
+        }
+
+        .base3 {
+            flex-basis: 3;
+        }
+
+       body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+       }
+    </style>
+</head>
+<body>
+    <div class="container flex horizontal quebra">
+        <div class="item tam1 base0">CFB</div>
+        <div class="item tam1 base0">CFB Cursos</div>
+        <div class="item tam1 base0">CFB Cursos 3</div>
+        <div class="item tam1 base0">CFB Cursos CFB Cursos</div>
+    </div>
+</body>
+</html>
