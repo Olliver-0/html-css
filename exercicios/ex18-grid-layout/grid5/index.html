@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+
+        .cabecalho {
+            grid-area: header;
+        }
+
+        .principal {
+            grid-area: main;
+        }
+
+        .lateral {
+            grid-area: side;
+        }
+
+        .rodape {
+            grid-area: footer;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "header header header header"
+                "main main . side"
+                "footer footer footer footer"
+            ;
+        }
+
+        .item {
+            background-color: #048;
+            color: white;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item cabecalho">CFB Cursos 1</div>
+        <div class="item principal">CFB Cursos 2</div>
+        <div class="item lateral">CFB Cursos 3</div>
+        <div class="item rodape">CFB Cursos 4</div>
+    </div>
+</body>
+</html>
